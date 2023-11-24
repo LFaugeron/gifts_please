@@ -91,10 +91,10 @@ const Inspector = ({isOpen, handleClient, handleNext, handleAccept, handleRefuse
                 </div>
             </div>
             <div className={"w-2/3 h-full bg-slate-600 flex items-center justify-center gap-8 relative"} style={{background: "radial-gradient(rgba(255, 255, 255, 0.2) 8%, #201919 8%)", backgroundPosition: "0% 0%", backgroundSize: "5vmin 5vmin"}}>
-                <p className={"p-4 bg-pink-500 rounded-lg absolute text-center top-12 left-12"}>Personnes dans la file d'attente : {nombreDeClients}</p>
-                <button className={"p-7 rounded-lg text-4xl bg-green-600 font-bold"} onClick={potDeVin ? handleAcceptPotDeVin : handleAccept}>Accepter</button>
-                <button className={"p-7 rounded-lg text-4xl bg-red-600 font-bold"} onClick={potDeVin ? handleRefusePotDeVin : handleRefuse}>Refuser</button>
-                <button onClick={handleNext} className={"text-white bg-black p-4 rounded-lg"}>SUIVANT</button>
+                <p className={"p-4 text-white bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg absolute text-center top-12 left-12"}>Personnes dans la file d'attente : {nombreDeClients}</p>
+                <button className={"p-7 rounded-lg text-4xl bg-gradient-to-br from-green-500 to-green-700 font-bold transition hover:scale-105"} onClick={potDeVin ? handleAcceptPotDeVin : handleAccept}>Accepter</button>
+                <button className={"p-7 rounded-lg text-4xl bg-gradient-to-br from-red-500 to-red-700 font-bold transition hover:scale-105"} onClick={potDeVin ? handleRefusePotDeVin : handleRefuse}>Refuser</button>
+                <button onClick={handleNext} className={"text-white bg-black p-4 rounded-lg transition hover:scale-105"}>SUIVANT</button>
             </div>
         </>
     );
